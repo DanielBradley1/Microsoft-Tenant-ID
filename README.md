@@ -7,8 +7,20 @@ Copy and paste the function into your PowerShell Script.
 
 ```
 Function Find-TenantID {
+
+<#
+  .AUTHOR
+    Daniel Bradley
+    ourcloudnetwork.co.uk
+
+  .DESCRIPTION
+    A small PowerShell function to quickly find the tenant ID of any Micorosft tenant using public APIs without authorisation.
+
+  .EXAMPLE
+    Find-TenantID -domain ourcloudnetwork.com
+#>
     
-    [CmdletBinding()]
+    [[CmdletBinding()]
      param(
         [Parameter(Position=0,mandatory=$true)]
         [string] $domain
@@ -23,7 +35,6 @@ Function Find-TenantID {
 
     #Return
     $response.tenantid
-
 }
 ```
 
