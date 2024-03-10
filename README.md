@@ -2,7 +2,7 @@
 
 A PowerShell function to return the Tenant ID for any Microsoft tenant using public APIs.
 
-### How to use
+## How to use
 Copy and paste the function into your PowerShell Script.
 
 ```
@@ -27,7 +27,7 @@ Function Find-TenantID {
 }
 ```
 
-Run the following command
+Run the following command:
 
 ```
 Find-TenantID -domain ourcloudnetwork.com
